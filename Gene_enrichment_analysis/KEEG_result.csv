@@ -1,0 +1,35 @@
+category,subcategory,ID,Description,GeneRatio,BgRatio,pvalue,qvalue,geneID,Count
+Human Diseases,Drug resistance: antineoplastic,hsa01522,Endocrine resistance,2/7,99/8843,0.00251197809652274,0.0465627870107582,2064/2099,2
+Organismal Systems,Endocrine system,hsa04915,Estrogen signaling pathway,2/7,139/8843,0.00489180463010657,0.0465627870107582,9687/2099,2
+Human Diseases,Cancer: specific types,hsa05224,Breast cancer,2/7,148/8843,0.00552933095752754,0.0465627870107582,2064/2099,2
+Human Diseases,Cancer: overview,hsa05205,Proteoglycans in cancer,2/7,204/8843,0.0103036128010125,0.0650754492695524,2064/2099,2
+Metabolism,Metabolism of cofactors and vitamins,hsa00670,One carbon pool by folate,1/7,20/8843,0.0157300176236209,0.0794779837825057,7298,1
+Human Diseases,Drug resistance: antineoplastic,hsa01523,Antifolate resistance,1/7,30/8843,0.0235151644068079,0.0835502455731122,7298,1
+Human Diseases,Cancer: specific types,hsa05219,Bladder cancer,1/7,41/8843,0.0320178070391423,0.0835502455731122,2064,1
+Organismal Systems,Excretory system,hsa04961,Endocrine and other factor-regulated calcium reabsorption,1/7,53/8843,0.0412209655595724,0.0835502455731122,2099,1
+Metabolism,Nucleotide metabolism,hsa00240,Pyrimidine metabolism,1/7,58/8843,0.0450334200632789,0.0835502455731122,7298,1
+Human Diseases,Cancer: specific types,hsa05213,Endometrial cancer,1/7,59/8843,0.0457943496090449,0.0835502455731122,2064,1
+Organismal Systems,Endocrine system,hsa04917,Prolactin signaling pathway,1/7,71/8843,0.0548850473582606,0.0835502455731122,2099,1
+Human Diseases,Cancer: overview,hsa05204,Chemical carcinogenesis - DNA adducts,1/7,71/8843,0.0548850473582606,0.0835502455731122,9,1
+Human Diseases,Cancer: overview,hsa05230,Central carbon metabolism in cancer,1/7,71/8843,0.0548850473582606,0.0835502455731122,2064,1
+Human Diseases,Cancer: specific types,hsa05223,Non-small cell lung cancer,1/7,73/8843,0.0563929228309998,0.0835502455731122,2064,1
+Human Diseases,Drug resistance: antineoplastic,hsa01524,Platinum drug resistance,1/7,75/8843,0.0578987357819879,0.0835502455731122,2064,1
+Human Diseases,Cancer: specific types,hsa05212,Pancreatic cancer,1/7,77/8843,0.0594024885627493,0.0835502455731122,2064,1
+Human Diseases,Drug resistance: antineoplastic,hsa01521,EGFR tyrosine kinase inhibitor resistance,1/7,80/8843,0.0616542600533948,0.0835502455731122,2064,1
+Metabolism,Xenobiotics biodegradation and metabolism,hsa00983,Drug metabolism - other enzymes,1/7,81/8843,0.0624038230089608,0.0835502455731122,9,1
+Metabolism,Global and overview maps,hsa01232,Nucleotide metabolism,1/7,85/8843,0.0653969449389451,0.0835502455731122,7298,1
+Environmental Information Processing,Signal transduction,hsa04012,ErbB signaling pathway,1/7,86/8843,0.0661439444120472,0.0835502455731122,2064,1
+Cellular Processes,Cellular community - eukaryotes,hsa04520,Adherens junction,1/7,93/8843,0.0713586261562503,0.0858449637969929,2064,1
+Human Diseases,Cancer: specific types,hsa05215,Prostate cancer,1/7,98/8843,0.0750680997194457,0.0862026025486458,2064,1
+Environmental Information Processing,Signal transduction,hsa04066,HIF-1 signaling pathway,1/7,109/8843,0.0831842604493305,0.0913694393951456,2064,1
+Organismal Systems,Endocrine system,hsa04919,Thyroid hormone signaling pathway,1/7,122/8843,0.0926973162717029,0.0975761223912662,2099,1
+Human Diseases,Cancer: specific types,hsa05226,Gastric cancer,1/7,150/8843,0.112900003892891,0.110306425597559,2064,1
+Cellular Processes,Cell growth and death,hsa04218,Cellular senescence,1/7,157/8843,0.117889992357391,0.110306425597559,4605,1
+Environmental Information Processing,Signaling molecules and interaction,hsa04514,Cell adhesion molecules,1/7,157/8843,0.117889992357391,0.110306425597559,1001,1
+Cellular Processes,Cellular community - eukaryotes,hsa04530,Tight junction,1/7,170/8843,0.127093305576224,0.114670651647721,2064,1
+Cellular Processes,Cellular community - eukaryotes,hsa04510,Focal adhesion,1/7,203/8843,0.1500867920287,0.130747114652951,2064,1
+Human Diseases,Cancer: overview,hsa05207,Chemical carcinogenesis - receptor activation,1/7,215/8843,0.158318334049169,0.133320702357195,2099,1
+Environmental Information Processing,Signal transduction,hsa04020,Calcium signaling pathway,1/7,254/8843,0.184600709470958,0.150438608736944,2064,1
+Environmental Information Processing,Signal transduction,hsa04010,MAPK signaling pathway,1/7,300/8843,0.214693423988167,0.169494808411711,2064,1
+Human Diseases,Cancer: overview,hsa05206,MicroRNAs in cancer,1/7,312/8843,0.222385265969537,0.170247093565196,2064,1
+Environmental Information Processing,Signal transduction,hsa04151,PI3K-Akt signaling pathway,1/7,362/8843,0.253743677283711,0.188540193647339,2064,1
