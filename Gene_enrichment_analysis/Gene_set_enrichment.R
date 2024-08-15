@@ -41,6 +41,10 @@ KEEG <- enrichKEGG(gene = names(symbol_genes),
                    pvalueCutoff = 1,
                    qvalueCutoff = 0.1)
 
+df_KEEG <- KEEG@result %>%
+  as.data.frame() %>%
+  dplyr::select(-p.adjust)
+
 dotplot(KEEG, x = "GeneRatio", showCategory = 10, 
         color = "qvalue", font.size = 12, label_format = 100,
         title = "KEGG pathway") + aes(shape = I(16)) + 
