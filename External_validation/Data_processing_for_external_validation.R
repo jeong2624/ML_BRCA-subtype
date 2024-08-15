@@ -1,13 +1,13 @@
 "
-Created on Wed July 17 2024
+Created on Thr Aug 15 2024
 
 @author: Jeong-Woon, Park
 "
 
-# Set working directory
-setwd("~/OneDrive - inu.ac.kr/SSU_project/논문작성/저널논문_가제본/Code & Result")
-source("Step1_Data_collection_preprocessing/Code/Utils.R")
-Gene <- fread("Step2_Model_construction/common_gene.csv", data.table = FALSE)$Gene
+source("Utils.R")
+
+# Define Gene variable, which derived from correlation analysis between gene expression and peak signal in 68 matched TCGA-BRCA patients
+Gene <- fread("common_gene.csv", data.table = FALSE)$Gene
 
 # Load GSE81538 gene expression data.
 GSE81538_exp = fread(file = "Step4_Validation_independent/Rawdata/GSE81538_gene_expression_405_transformed.csv.gz", data.table = FALSE) %>%
