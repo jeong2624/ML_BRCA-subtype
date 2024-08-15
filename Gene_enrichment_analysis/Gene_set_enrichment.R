@@ -1,11 +1,8 @@
 "
-Created on Sat July 20 2024
+Created on Thr Aug 15 2024
 
 @author: Jeong-Woon, Park
 "
-
-# Set working directory
-setwd("~/OneDrive - inu.ac.kr/SSU_project/논문작성/저널논문_가제본/Code & Result")
 
 # Load the package related to enrichment analysis.
 packages = c("tidyverse", "data.table", "clusterProfiler", "org.Hs.eg.db", "enrichplot")
@@ -15,11 +12,12 @@ options(enrichplot.colours = c("red","blue"))
 # Define the symbols of interest
 symbol_genes <- c("CDH3", "ERBB2", "TYMS", "GREB1", "OSR1", 
                   "MYBL2", "FAM83D", "ESR1", "FOXC1", "NAT1")
-gene_info <- fread("Step1_Data_collection_preprocessing/Results/peak.annotation.csv")
+gene_info <- fread("peak.annotation.csv")
 
 # Subset gene_info to match SYMBOL values and create a named vector
 names(symbol_genes) <- gene_info[SYMBOL %in% symbol_genes, geneId]
 
+# GO enrichment analysis
 GO_BP <- enrichGO(gene = names(symbol_genes),
                   OrgDb = org.Hs.eg.db,
                   ont = "BP",
@@ -37,6 +35,7 @@ dotplot(GO_BP, x = "GeneRatio", showCategory = 10,
   aes(color = qvalue) + 
   set_enrichplot_color(type = "color", name = "qvalue")
 
+# KEGG pathway enrichment analysis
 KEEG <- enrichKEGG(gene = names(symbol_genes),
                    organism = 'hsa',
                    pvalueCutoff = 1,
