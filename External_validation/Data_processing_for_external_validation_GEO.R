@@ -31,7 +31,7 @@ rownames(GSE81538_metadata) <- NULL
 
 # Load GSE135298 gene expression data.
 # https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135298
-GSE135298_exp = fread(file = "Step4_Validation_independent/Rawdata/GSE135298_OSLO2_EMIT0_RNA-seq.txt.gz", data.table = FALSE) %>%
+GSE135298_exp = fread(file = "GSE135298_OSLO2_EMIT0_RNA-seq.txt.gz", data.table = FALSE) %>%
   column_to_rownames("V1") %>%
   fpkm_to_tpm(Pseudocount = 0.1)
 
@@ -40,7 +40,7 @@ dim(GSE135298_exp) # [1] 813    93
 
 # Load the GSE135298 metadata.
 # https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135298
-GSE135298_metadata = process_GEO_metadata('Step4_Validation_independent/Rawdata/GSE135298_series_matrix.txt.gz')
+GSE135298_metadata = process_GEO_metadata('GSE135298_series_matrix.txt.gz')
 GSE135298_exp = GSE135298_exp[, GSE135298_metadata$title]
 dim(GSE135298_exp) # [1] 813    82
 
@@ -50,7 +50,7 @@ GSE135298_metadata <- GSE135298_metadata[, c("geo_accession", "BRCA_Subtype_PAM5
 rownames(GSE135298_metadata) <- NULL
 
 # Save gene expression profile and metadata.
-fwrite(GSE81538_exp, "Step4_Validation_independent/GSE81538_Feature.csv", sep = "\t", row.names = TRUE)
-fwrite(GSE81538_metadata, "Step4_Validation_independent/GSE81538_PAM50.csv", sep = "\t")
-fwrite(GSE135298_exp, "Step4_Validation_independent/GSE135298_Feature.csv", sep = "\t", row.names = TRUE)
-fwrite(GSE135298_metadata, "Step4_Validation_independent/GSE135298_PAM50.csv", sep = "\t")
+fwrite(GSE81538_exp, "GSE81538_Feature.csv", sep = "\t", row.names = TRUE)
+fwrite(GSE81538_metadata, "GSE81538_PAM50.csv", sep = "\t")
+fwrite(GSE135298_exp, "GSE135298_Feature.csv", sep = "\t", row.names = TRUE)
+fwrite(GSE135298_metadata, "GSE135298_PAM50.csv", sep = "\t")
