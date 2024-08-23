@@ -5,7 +5,7 @@
 Breast cancer is categorized into four main intrinsic subtypes, and distinguishing between these subtypes is crucial for providing personalized treatment to patients. However, systematic analyses exploring the connections between gene expression and chromatin accessibility using bulk RNA-seq and ATAC-seq data, coupled with machine learning algorithms, are lacking. In this study, we developed a classification model based on the integrative analysis of RNA-seq transcriptome and ATAC-seq epigenetic information. We identified 10 signature genes associated with these intrinsic subtypes, which were predominantly linked to immune responses, hormone signaling, cancer progression, and cellular proliferation.
 
 ## Data preparation
-In this study, four gene expression datasets—GDC TCGA-BRCA, GSE96058, GSE81538, and GSE135298—along with ATAC-seq peak data for GDC TCGA-BRCA were obtained from the UCSC Xena browser and the Gene Expression Omnibus (GEO) database.
+In this study, four gene expression datasets—GDC TCGA-BRCA, GSE96058, GSE81538, and GSE135298—along with ATAC-seq peak data for GDC TCGA-BRCA were obtained from the UCSC Xena browser (https://xenabrowser.net/datapages/) and the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/).
 
 ## Data analysis
 The R scripts for data integration, preprocessing, and integrative analysis between RNA-seq and ATAC-seq, as well as gene enrichment analysis and motif discovery, and the Python scripts in Jupyter Notebook for feature selection, training, and external validation, along with the input and output files for this analysis, have been uploaded to this repository.
