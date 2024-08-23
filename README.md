@@ -13,7 +13,7 @@ The R scripts for data integration, preprocessing, and integrative analysis betw
 Since some of the data files are limited to 25MB or less, the data used for the analysis has been uploaded as the gz file. Please decompress them before use. So use it after decompressing.
 
 ## Installation
-All analyses were implemented using R version 4.1.1 and Python 3.9.12 on a MacBook Pro 14 (M1).
+All analyses were implemented using R version 4.4.1 and Python 3.9.12 on a MacBook Pro 14 (M1).
 
 ### Dependencies
 ```
