@@ -17,7 +17,6 @@ All analyses were implemented using R version 4.1.1 and Python 3.9.12 on a MacBo
 
 ### Dependencies
 ```
-python==3.9.12
 scikit-learn==1.5.1
 matplotlib==3.9.2
 pandas==2.2.2
