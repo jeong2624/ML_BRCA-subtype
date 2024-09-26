@@ -29,7 +29,7 @@ df_GO_BP <- GO_BP@result %>%
   as.data.frame() %>%
   dplyr::select(-p.adjust)
 
-dotplot(GO_BP, x = "GeneRatio", showCategory = 10, 
+barplot(GO_BP, x = "GeneRatio", showCategory = 10, 
         color = "qvalue", font.size = 12, label_format = 100,
         title = "GO: Biological process") + aes(shape = I(16)) + 
   aes(color = qvalue) + 
@@ -45,7 +45,7 @@ df_KEEG <- KEEG@result %>%
   as.data.frame() %>%
   dplyr::select(-p.adjust)
 
-dotplot(KEEG, x = "GeneRatio", showCategory = 10, 
+barplot(KEEG, x = "GeneRatio", showCategory = 10, 
         color = "qvalue", font.size = 12, label_format = 100,
         title = "KEGG pathway") + aes(shape = I(16)) + 
   aes(color = qvalue) + 
