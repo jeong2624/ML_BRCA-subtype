@@ -29,4 +29,4 @@ umap-learn==0.5.6
 ```
 
 ## Citation
-Jeong-Woon Park and Je-Keun Rhee. "Integrative analysis of ATAC-seq and RNA-seq through machine learning identifies 10 signature genes for breast cancer intrinsic subtypes", Biology. (Accepted)
+Jeong-Woon Park and Je-Keun Rhee (2024). Integrative analysis of ATAC-seq and RNA-seq through machine learning identifies 10 signature genes for breast cancer intrinsic subtypes. Biology, 13(10), 799. https://doi.org/10.3390/biology13100799
