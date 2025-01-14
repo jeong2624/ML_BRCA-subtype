@@ -16,7 +16,7 @@ GSE81538 <- fread("GSE81538_gene.csv")$Gene
 GSE135298 <- fread("Rawdata/GSE135298_gene.csv")$Gene
 
 # Gene annotation preprocessing
-# https://gdc-hub.s3.us-east-1.amazonaws.com/download/gencode.v22.annotation.gene.probeMap
+# https://gdcv18.xenahubs.net/download/gencode.v22.annotation.gene.probeMap
 gencode.v22 <- fread("gencode.v22.annotation.gene.probeMap", data.table = FALSE) %>%
   filter(!chrom %in% c("chrX", "chrY", "chrM")) %>%
   mutate(gene_length = chromEnd - chromStart + 1) %>%
