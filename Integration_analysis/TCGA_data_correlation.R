@@ -8,7 +8,7 @@ Created on Thr Aug 15 2024
 source("Utils.R")
 
 # Load the TCGA-BRCA gene expression data and convert log2(FPKM + 1) values to log2(TPM + 1) values.
-# https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-BRCA.htseq_fpkm.tsv.gz
+# https://gdcv18.xenahubs.net/download/TCGA-BRCA.htseq_fpkm.tsv.gz
 TCGA_BRCA_exp <- fread("TCGA-BRCA.htseq_fpkm.tsv.gz", data.table = FALSE) %>% 
   column_to_rownames("Ensembl_ID") %>%
   fpkm_to_tpm(., Pseudocount = 1) %>%
